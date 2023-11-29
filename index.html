@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMED Reading Assignment #4</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #e6f0ff; /* closer to white shade of blue */
+            transition: background-color 0.3s ease;
+        }
+        .grid-item:active {
+            background-color: #ccd9e3; /* slightly darker when pressed */
+        }
+    </style>
+</head>
+<body>
+    <h1>Jared Reading Number 23 for the Class</h1>
+    <div class="grid-container">
+        <button class="grid-item" onclick="playSound('audio1')">Whaddup</button>
+        <button class="grid-item" onclick="playSound('audio2')">I'm</button>
+        <button class="grid-item" onclick="playSound('audio3')">Jared</button>
+        <button class="grid-item" onclick="playSound('audio4')">I'm</button>
+        <button class="grid-item" onclick="playSound('audio5')">19</button>
+        <button class="grid-item" onclick="playSound('audio6')">And</button>
+        <button class="grid-item" onclick="playSound('audio7')">I</button>
+        <button class="grid-item" onclick="playSound('audio8')">Never</button>
+        <button class="grid-item" onclick="playSound('audio9')">Learned</button>
+        <button class="grid-item" onclick="playSound('audio10')">How</button>
+        <button class="grid-item" onclick="playSound('audio11')">To</button>
+        <button class="grid-item" onclick="playSound('audio12')">Read</button>
+    </div>
+    <audio id="audio1" src="" ></audio>
+    <audio id="audio2" src="" ></audio>
+    <audio id="audio3" src="" ></audio>
+    <audio id="audio4" src="" ></audio>
+    <audio id="audio5" src="" ></audio>
+    <audio id="audio6" src="" ></audio>
+    <audio id="audio7" src="" ></audio>
+    <audio id="audio8" src="" ></audio>
+    <audio id="audio9" src="" ></audio>
+    <audio id="audio10" src="" ></audio>
+    <audio id="audio11" src="" ></audio>
+    <audio id="audio12" src="" ></audio>
+    <script>
+        function playSound(audioID) {
+            document.getElementById(audioID).play();
+        }
+    </script>
+</body>
+</html>
